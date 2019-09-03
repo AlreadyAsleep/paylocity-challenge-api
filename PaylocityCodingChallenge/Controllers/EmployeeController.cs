@@ -33,7 +33,7 @@ namespace PaylocityCodingChallenge.Controllers
         [HttpGet]
         public async Task<IEnumerable<EmployeeViewModel>> GetAllEmployees()
         {
-            return (await _employeeRepository.GetAllEmployeesAsync()).ToList().ConvertAll(x => (EmployeeViewModel)x);
+            return (await _employeeRepository.GetAllEmployeesAsync()).Select(x => (EmployeeViewModel)x);
         }
 
         [HttpGet]

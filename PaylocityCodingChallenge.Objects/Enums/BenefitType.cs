@@ -9,6 +9,6 @@ namespace PaylocityCodingChallenge.Objects.Enums
     public enum BenefitType : byte
     {
         Employee = 1,
-        Dependent
+        Dependent = 2
     }
 }
